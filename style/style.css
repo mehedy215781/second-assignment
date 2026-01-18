@@ -34,3 +34,25 @@ nav{
 .hamburger-icon{
     display: none;
 }
+
+/* responsive mobile/small device */
+@media screen and (max-width: 576px) {
+    .logo img{
+        
+        margin-left: 0;   
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .menu{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .hamburger-icon{
+        display: inline;
+        color: aliceblue;
+        font-size: 2.2rem;
+    }
+}
