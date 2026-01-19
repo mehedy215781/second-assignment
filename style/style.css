@@ -145,6 +145,7 @@ nav{
     margin-bottom: 1.5rem;
 }
 /* responsive mobile/small device */
+
 @media screen and (max-width: 576px) {
     .logo img{
         
@@ -164,6 +165,7 @@ nav{
         color: aliceblue;
         font-size: 2.2rem;
     }
+    /* banner -section */
     .banner-section{
       
       background-size: contain;
@@ -171,14 +173,14 @@ nav{
       
     }
    .circle{
-    width: 150px;
-    margin-top: -470px;
+    width: 95px;
+    margin-top: -490px;
     display: flex;
     justify-content: center;
     align-items: center;
    }
    .circle img{
-    width: 80px !important;
+    width: 50px !important;
    }
    .badge{
     font-size: 10px;
@@ -188,7 +190,7 @@ nav{
    }
    .baneer-content{
     
-    margin-top:-495px;
+    margin-top:-530px;;
     
    }
    .baneer-content h2{
