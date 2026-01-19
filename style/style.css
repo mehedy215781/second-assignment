@@ -188,6 +188,73 @@ button {
 .card-text{
     color: #FFFFFF;
 }
+  
+/* main-card */
+#card-section{
+    background-color:#230E3D ;
+}
+.main-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+   
+}
+.card-1{
+    padding:107px 40px;
+    grid-row: span 2;
+    grid-column: span 1;
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 10px;
+}
+.card-2{
+     grid-column: span 2;
+     background: rgba(53, 17, 101, 0.4);
+     padding: 40px 40px;
+     border-radius: 10px;
+}
+.card-3{
+     grid-column: span 2;
+     background: rgba(53, 17, 101, 0.4);
+     padding: 40px 40px;
+     border-radius: 10px;
+}
+.card-4{
+     grid-column: span 2;
+     background: rgba(53, 17, 101, 0.4);
+     padding:45px 40px;
+     border-radius: 10px;
+}
+.card-5{
+     grid-column: span 1;
+     grid-row: span 1;
+     background: rgba(53, 17, 101, 0.4);
+     padding: 40px 40px;
+     border-radius: 10px;
+}
+.about-content-1{
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+   padding: 50px 200px;
+   border-radius: 10px;
+}
+.card-image{
+    margin-bottom: 1rem;
+
+}
+.main-card-title{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.main-card-text{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #f5e3e3;
+}
 
 /* responsive  */
 @media  screen and (max-width:576px) {
@@ -243,8 +310,17 @@ img.microphone {
 .about-title {
     font-size: 32px;
     
-}
+} 
+/* maim-card responsive */
+.main-card {
+    grid-template-columns: repeat(1, 1fr);
+   }
 
+   .about-content-1 {
+    
+    color: #FFFFFF;
+     padding: 9px 4px;
+    
 }
 
    
