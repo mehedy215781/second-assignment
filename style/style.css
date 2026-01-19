@@ -25,16 +25,125 @@ nav{
 .menu a{
     color: #FFFFFF;
 }
+/* button-style */
+
 .btn{
     border-radius: 10000px;
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     padding: 12px 16px 12px 16px;
     color: #FFFFFF;
+    cursor: pointer;
+    animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 149, 0.7);
+        transform: scale(1);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 149, 0);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 149, 0);
+        transform: scale(1);
+    }
+}
+ .btn-1{
+     border-radius: 10000px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    padding: 12px 16px 12px 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    animation: pulse-animation 2s infinite;
+ }
+.btn-2{
+    color:#00FF88;
+    border: 1px solid rgba(0, 255, 136, 1);
+    border-radius: 10px; 
+    padding: 12px 20px 12px 20px;
 }
 .hamburger-icon{
     display: none;
 }
+/* banner-style */
+.banner-section {
+  width: 100%;
+  height: 47.5rem;
+  background:url(./../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center,;
+  background-size: cover;
+  
+}
+.circle-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 41.5rem;
+}
 
+.circle{
+    width: 60vw;
+    max-width: 25rem;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    animation: neon-pulse 2s infinite;
+    z-index: 10;
+    
+}
+@keyframes neon-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 255, 149, 0.4), 
+                    0 0 10px rgba(0, 255, 149, 0.2);
+    }
+    50% {
+        transform: scale(1.05); 
+        box-shadow: 0 0 15px rgba(0, 255, 149, 0.8), 0 0 30px rgba(0, 255, 149, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 255, 149, 0.4), 
+                    0 0 10px rgba(0, 255, 149, 0.2);
+    }
+}
+
+
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #00FF95;
+   font-size: 1rem;
+   font-weight: bold;
+   padding: 8px 26px;
+   border-radius: 10px;
+   
+}
+
+
+.baneer-content{
+    text-align: center;
+    color: azure;
+    margin-top: -6.25rem;
+}
+.baneer-content h2{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.baneer-content p{
+    font-size: 1rem;
+    color: #ffffff96;
+    margin-bottom: 1.5rem;
+}
 /* responsive mobile/small device */
 @media screen and (max-width: 576px) {
     .logo img{
@@ -55,4 +164,44 @@ nav{
         color: aliceblue;
         font-size: 2.2rem;
     }
-}
+    .banner-section{
+      
+      background-size: contain;
+      
+      
+    }
+   .circle{
+    width: 150px;
+    margin-top: -470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .circle img{
+    width: 80px !important;
+   }
+   .badge{
+    font-size: 10px;
+    padding: 2px 8px;
+    right: -5px;
+
+   }
+   .baneer-content{
+    
+    margin-top:-495px;
+    
+   }
+   .baneer-content h2{
+    font-size: 30px;
+    margin-bottom: 0;
+   }
+    .baneer-content p{
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    .btn-1,.btn-2{
+        font-size: 10px;
+        padding: 2px 4px;
+      
+    }
+   }
